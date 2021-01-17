@@ -1,0 +1,118 @@
+*{
+	
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body,html{
+	height: 100%;
+	margin: 0;
+}
+
+.container{
+	background-image: url('/Image/image.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+#header-team{
+    position: absolute;
+    float: left;
+    top: 0;
+    font-size: 35px;
+    padding: 15px;
+    color: #fff;
+    font-family: Bebas neue;
+    }
+#login-btn{
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 23px;
+    width: 170px;
+    border:transparent;
+    background-color: #fff;
+    color: #000;
+    }
+#login-btn:hover{
+    background-color: #3a3b3c;
+    color: #fff;
+}
+nav{
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 40px;
+    font-size: 25px;
+    font-family: Raleway;
+    }
+.navlist{
+     margin-right:50px; 
+      color: #fff;
+}
+.navlist:hover{
+    background-color: #fff;
+    color: #000;
+    
+}
+hr{
+    opacity: 0.1;
+    background-color: #434343;
+}
+.box{
+	text-align: center;
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 550px;
+	height: 450px;
+	border-radius: 20px;
+}
+p{
+	font-size: 27px;
+}
+h3{
+	font-family: Raleway;
+	font-size: 30px;
+	padding:20px;
+}
+input{
+	padding: 15px;
+	width: 450px;
+	font-size: 22px;
+	margin-top: 15px;
+	border-color: #cccccc;
+	text-align: center;
+}
+input:hover{
+	border:2px solid #3a3b3c;
+}
+i{
+	position: absolute;
+	margin-top: 25px;
+	margin-left: 25px;
+	color: #171717;
+}
+#forgotpassword{
+	float: left;
+	color: #03254c;
+	margin-left: 60px;
+	margin-top: 10px;
+	font-size: 24px;
+}
+#btn-submit{
+	width: 261px;
+	height: 55px;
+	color: #fff;
+	font-size: 22px;
+	border-radius: 20px;
+	margin-bottom: -20px;
+	background-color: #171717;
+	border:transparent;
+}
+#btn-submit:hover{
+	background-color: #3e3b3c;
+}

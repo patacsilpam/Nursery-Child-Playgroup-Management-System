@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body{
+	margin: 0;
+	height: 100%;
+	position: relative;
+	min-height: 100vh;
+}
+img{
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 720px;
+}
+hr{
+	position: absolute;
+	top: 0;
+	margin-top: 100px;
+	width: 100%;
+	opacity: 0.1
+}
+i{
+	font-size: 20px;
+}
+h1{
+	font-size: 40px;}
+/*start of css design in background-image, text and button*/
+.container{
+	position: relative;
+	text-align: center;
+}
+.align-center-text{
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-family: Raleway;
+}
+#btn-start{
+	padding:10px;
+	font-size: 20px;
+	background-color: transparent;
+	border:3px solid #d9d9d9;
+	color: #fff;
+	font-family: poppins;
+}
+#btn-start:hover{
+	color: #000;
+	background-color: #fff;
+}
+/*end of css design in background-image, text and button*/
+#header-team-name{ /* start of css design in header and navbar*/
+	top: 0;
+	left: 0;
+	position: absolute;
+	float: left;
+	padding:30px;
+	color: #fff;
+	font-family: Poppins;
+}
+.nav{
+	top: 0;
+	right: 0;
+	display: flex;
+	position: absolute;
+	float: right;
+	padding:35px;
+
+}
+.nav-link a{
+	color: #fff;
+	font-family: raleway;
+	font-size: 30px;
+	padding: 20px;
+}
+.nav-link a:hover{
+	color: #000;
+	background-color: #fff;
+}
+#login-btn{
+	padding: 10px;
+	margin-left: 10px;
+    border-radius: 20px;
+    font-size: 23px;
+    width: 170px;
+    border:transparent;
+    background-color: #fff;
+    color: #000;
+}
+#login-btn:hover{
+	background-color: #171717;
+	color: #FFF;
+}
+/* css main and input*/
+.main{
+	padding-bottom: 500px;
+}
+#align-center-textform{
+	text-align: center;
+	padding:20px;
+	margin-top: 50px;
+	font-size: 70px;
+	font-family:poppins;
+}
+.name-container,.contact-container, .msg-container,.btn-submit{
+	display: flex;
+	justify-content: center;
+}
+.input-name{
+	width: 600px;
+	padding: 20px;
+	font-size: 30px;
+	margin-left: 10px;
+	margin-top: 50px;
+	
+}
+.input-contact{
+	width: 600px;
+	padding: 20px;
+	font-size: 30px;
+	margin-left: 10px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.input-msg{
+	height: 150px;
+	width: 1210px;
+	padding: 20px;
+	font-size: 30px;
+}
+#btn-btn-submit{
+	font-size: 30px;
+	width: 200px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+	border-radius: 20px;
+	border:transparent;
+	background-color: #171717;
+	color: #fff;
+}
+#btn-btn-submit:hover{
+	background-color: #242526;
+}
+input:hover{
+	border:1px solid #171717;
+}
+/*end of css design, input form in main*/
+.footer{/*css footer*/
+	background-color: #171717;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffff;
+	font-size:30px;
+	font-family: poppins;
+}
+
