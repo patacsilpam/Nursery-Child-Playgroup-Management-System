@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\nurseryController;
-use App\Http\Controllers\ImageController;
+use App\Http\Controllers\NurseryController;
+use App\Http\Controllers\SessionController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,70 +13,37 @@ use App\Http\Controllers\ImageController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//Route::get('createAccount',[NurseryController::class,'CreateAccount']);
+//Route::get('/login',[NurseryController::class,'LoginNursery']);
+Route::get('/index',[NurseryController::class,'Dashboard']);// display dashboard
+Route::get('/register',[NurseryController::class,'Register']);//display register
+Route::get('/information',[NurseryController::class,'Information']);//display information
+Route::get('/parents',[NurseryController::class,'Parents']);//display parents
+Route::post('/register',[NurseryController::class, 'insertData']);//insert data
+Route::post('/addChild',[NurseryController::class,'AddChild']);
+Route::get('/information{ChildID}',[NurseryController::class,'deleteDataNursery']);//delete table
+Route::get('/edit',[NurseryController::class,'editChildView']);
+Route::get('/edit{ChildID}',[NurseryController::class,'editDataNursery']);
+Route::post('/edit{ChildID}',[NurseryController::class,'updateDataChildren']);
+Route::get('/parents{ParentID}',[NurseryController::class,'deleteDataParents']);//delete parentsview
+Route::get('/updateParents',[NurseryController::class,'editParentsView']);
+Route::get('/updateParents{ParentID}',[NurseryController::class,'editDataParents']); //edit the value for parents
+Route::post('/updateParents{ParentID}',[NurseryController::class,'updateDataParents']);//updating dataParents
+Route::get('/viewChildrenInfo{ChildID}{ParentID}',[NurseryController::class,'viewChildren']);
+Route::get('/search',[NurseryController::class,'Search']);
+Route::get('/searchParents',[NurseryController::class,'SearchParents']);
 
-Route::get('/dashboard',[nurseryController::class,'dashboard']);
-Route::get('/laravelController',[ImageController::class,'laravelController']);
+
+Route::get('session',[SessionController::class,'Session']);
+Route::post('session',[SessionController::class,'insertSessionData']);
+Route::get('session',[SessionController::class,'displaySession']);
+Route::get('session{sessionID}',[SessionController::class,'deleteSession']);
+Route::get('updateSession',[SessionController::class,'editDisplaySessions']);
+Route::get('updateSession{sessionID}',[SessionController::class,'editSession']);
+Route::post('updateSession{sessionID}',[SessionController::class,'updateSession']);
+//Route::get('/viewParentsInformation{ParentID}',[NurseryController::class,'viewParents']);
+
+//Route::get('createAccount',[NurseryController::class,'createAccount']);
+//Route::get('login',[LoginController::class,'Login']);
 
 
-
-
-
-
-
-/*
-Route::get('/', function () {
-    return view('teamSrp/home');
-});
-Route::get('/login', function () {
-    return view('teamSrp/login');
-});
-Route::get('/register', function () {
-    return view('teamSrp/register');
-});
-Route::get('/contact', function () {
-    return view('teamSrp/contact');
-});
-Route::get('/about', function () {
-    return view('teamSrp/about');
-});
-//weppage team srp
-Route::get('/home', function () {
-    return view('WebPage-TeamSrp/home');
-});
-Route::get('/contact', function () {
-    return view('WebPage-TeamSrp/contact');
-});
-Route::get('/about', function () {
-    return view('WebPage-TeamSrp/about');
-});
-Route::get('/login', function () {
-    return view('WebPage-TeamSrp/login');
-});
-Route::get('/register', function () {
-    return view('WebPage-TeamSrp/register');
-});
-Route::get('/output1/{id}{k}', function ($id,$k){
-	$id = 1;
-	$k = 0;
-	$text = array("Happy", "New", "Year");
-	for($i=0; $i<=$id; $i++){
-		echo $text [$i];
-		echo " ";
-		for ($x=2; $x>=$k  ; $x--) { 
-			echo $text [$x];
-			echo " ";
-		}
-	}
-});
-
-Route::get('/data/{fname?}{lname?}{conNumber?}{gender?}{motto?}', function ($fname ="Pamela",$lname ="Patacsil",$conNumber ="09174371664",$gender ="Female",$motto ="Sorrow is better than laughter: for by the sadness of the countenance the heart is made better. Ecclesiates 7:3 KJV "){
-	return view ('data', ['Fname' => $fname,'Lname' => $lname, 'ConNumber' => $conNumber, 'Gender' => $gender,'Motto' => $motto]);
-});
-*/
-/*
-Route::get('/index', function(){
-	return view ('Nursery/index');
-});
-Route::get('/register', function(){
-	return view ('Nursery/register');
-});*/

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+
+body{
+	background-color: #ffed83;
+}
+h2{
+	margin-bottom: 50px;
+}
+.box{
+	width: 50%;
+	height: 70%;
+	background-color: #172549;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 20px;
+	padding: 10px;
+	text-align: center;
+	font-family: Lato;
+	overflow: hidden;
+}
+.box-content{
+	display:block;
+	margin: 0 auto;
+
+}
+label{
+	width: 250px;
+	font-size: 18px;
+}
+input{
+	width: 50%;
+	padding: 10px;
+	display: inline-block;
+	font-size: 20px;
+	border:transparent;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	border-radius: 10px;
+	outline: none;
+}
+#btn-submit{
+	width: 25%;
+	background-color: transparent;
+	text-decoration: none;
+	border:2px solid #ffed83;
+	border-radius: 25px;
+	font-size: 20px;
+	margin-top: 30px;
+	color: #fff;
+}
+#btn-submit:hover{
+	background-color:#ffed83;
+	color: #242526;
+	cursor: pointer;
+}
+/*Login form*/
+#login-text{
+	margin-top: 20px;
+}
+.login-box{
+	width: 40%;
+	height: 50%;
+	padding: 5px;
+	background-color: #172549;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 20px;
+	padding: 10px;
+	text-align: center;
+	font-family: Lato;
+	overflow: hidden;
+}
+#content{
+	margin: auto auto;
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+}
+.input-lgn{
+	width: 70%;
+	border-radius: 30px;
+	text-align: center;
+	background-color: transparent;
+	color: #fff;
+	border:1.75px solid yellow;
+	display: block;
+	top: 3%;
+	position: relative;
+	margin-left:auto;
+	margin-right: auto;
+	overflow: hidden;
+	margin-top: -10px;
+}
+.input-lgn:hover{
+	border:1.75px solid #0c71e0;
+	width: 100%;
+	transition: .20s;
+}
+#lgn-submit{
+	text-decoration: none;
+	width: 60%;
+	border:1px solid #ebecf0;
+	margin-bottom: 20px;
+}
+#lgn-submit:hover{
+	background-color:#ffed83;
+	border:transparent;
+	color: #242526;
+	cursor: pointer;
+}
+#reset{
+	color: #fff;
+	margin-top: 30px;
+}
