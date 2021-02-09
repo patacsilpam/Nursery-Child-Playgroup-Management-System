@@ -3,7 +3,7 @@
 @section('view-content')
 	<div id="container">
 		<div class="view-con">
-		<h1 id="header-details">Nursery Profile</h1>
+		<h1 id="header-details">Nursery/Child Profile</h1>
 	
 			<table>
 					@foreach($profile as $profile)
@@ -71,7 +71,7 @@
 					<td>Guardian 1</td>
 				</tr>
 				<tr class="t-row2">
-					<td><b>First Name</b></td>
+					<td><b>Name</b></td>
 					<td>{{$profile->guardian_fname1}} {{$profile->guardian_lname1}}</td>
 				</tr>
 				<tr class="t-row1">
@@ -86,7 +86,7 @@
 					<td>Guardian 2</td>
 				</tr>
 				<tr class="t-row1">
-					<td><b>First Name</b></td>
+					<td><b>Name</b></td>
 					<td>{{$profile->guardian_fname2}} {{$profile->guardian_lname2}}</td>
 				</tr>
 				<tr class="t-row2">

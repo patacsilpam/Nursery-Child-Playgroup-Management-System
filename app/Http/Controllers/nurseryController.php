@@ -145,8 +145,8 @@ class NurseryController extends Controller
    	return view('updateParents');
    }
    //viewing the records
-   public function viewChildren($ChildID,$ParentID){
-   		$profile = DB::SELECT("SELECT tblchildren.ChildID,tblchildren.fname,tblchildren.lname,tblchildren.dobday,tblchildren.dobmonth,tblchildren.dobyear,tblchildren.admitday,tblchildren.admitmonth,tblchildren.admityear,tblchildren.gender,tblchildren.childnotes,tblchildren.guardian_fname1,tblchildren.guardian_lname1,tblchildren.guardian_rel1,tblchildren.guardian_Phone1,tblchildren.guardian_fname2,tblchildren.guardian_lname2,tblchildren.guardian_rel2,tblchildren.guardian_Phone2,tblparents.ParentID,tblparents.ParentTitle,tblparents.father_fname,tblparents.father_lname,tblparents.mother_fname,tblparents.mother_lname,tblparents.streetAddress,tblparents.town_city,tblparents.postalCode,tblparents.postalCode,tblparents.province_states,tblparents.province_states,tblparents.homePhone,tblparents.workPhone FROM tblchildren INNER JOIN tblparents ON tblchildren.ChildID=tblparents.ParentID",[$ChildID,$ParentID]);
+   public function viewChildren($ChildID){
+   		$profile = DB::SELECT("SELECT tblchildren.ChildID,tblchildren.fname,tblchildren.lname,tblchildren.dobday,tblchildren.dobmonth,tblchildren.dobyear,tblchildren.admitday,tblchildren.admitmonth,tblchildren.admityear,tblchildren.gender,tblchildren.childnotes,tblchildren.guardian_fname1,tblchildren.guardian_lname1,tblchildren.guardian_rel1,tblchildren.guardian_Phone1,tblchildren.guardian_fname2,tblchildren.guardian_lname2,tblchildren.guardian_rel2,tblchildren.guardian_Phone2,tblparents.ParentID,tblparents.ParentTitle,tblparents.father_fname,tblparents.father_lname,tblparents.mother_fname,tblparents.mother_lname,tblparents.streetAddress,tblparents.town_city,tblparents.postalCode,tblparents.postalCode,tblparents.province_states,tblparents.province_states,tblparents.homePhone,tblparents.workPhone FROM tblchildren INNER JOIN tblparents ON tblchildren.ChildID=tblparents.ParentID WHERE ChildID=?",[$ChildID]);
 
    return view ('viewChildrenInfo',['profile' => $profile]);
    }

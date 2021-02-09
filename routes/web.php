@@ -29,7 +29,7 @@ Route::get('/parents{ParentID}',[NurseryController::class,'deleteDataParents']);
 Route::get('/updateParents',[NurseryController::class,'editParentsView']);
 Route::get('/updateParents{ParentID}',[NurseryController::class,'editDataParents']); //edit the value for parents
 Route::post('/updateParents{ParentID}',[NurseryController::class,'updateDataParents']);//updating dataParents
-Route::get('/viewChildrenInfo{ChildID}{ParentID}',[NurseryController::class,'viewChildren']);
+Route::get('/viewChildrenInfo{ChildID}',[NurseryController::class,'viewChildren']);
 Route::get('/search',[NurseryController::class,'Search']);
 Route::get('/searchParents',[NurseryController::class,'SearchParents']);
 
